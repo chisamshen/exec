@@ -15,13 +15,13 @@ For example:
 
     123 BUY 100
 
-Is a request to way 100 shares of security 123.
+Is a request to buy 100 shares of security 123.
 
 This should be responded to with a single line with a single numeric value representing the quoted price.
 
 To calculate the quote price, two interfaces have been provided.
 
-* `QuoteCalculationEngine` - to calculate the quote price based on a security, way/sell indicator, requested
+* `QuoteCalculationEngine` - to calculate the quote price based on a security, buy/sell indicator, requested
 quantity and reference price.
 * `ReferencePriceSource` - source of reference prices for the `QuoteCalculationEngine`.
 
