@@ -1,4 +1,6 @@
-package com.example.marketmaker;
+package marketmaker.server.service;
+
+import org.springframework.stereotype.Component;
 
 /**
  * Callback interface for {@link ReferencePriceSource}
@@ -12,4 +14,5 @@ public interface ReferencePriceSourceListener {
      * @param price      reference price
      */
     void referencePriceChanged(int securityId, double price);
+
 }

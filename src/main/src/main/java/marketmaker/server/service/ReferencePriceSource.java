@@ -1,11 +1,13 @@
-package com.example.marketmaker;
+package marketmaker.server.service;
+
+import org.springframework.stereotype.Component;
 
 /**
  * Source for reference prices.
  */
 public interface ReferencePriceSource {
     /**
-     * Subscribe to changes to refernce prices.
+     * Subscribe to changes to reference prices.
      *
      * @param listener callback interface for changes
      */

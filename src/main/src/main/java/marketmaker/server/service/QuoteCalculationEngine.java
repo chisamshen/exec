@@ -1,4 +1,6 @@
-package com.example.marketmaker;
+package marketmaker.server.service;
+
+import org.springframework.stereotype.Component;
 
 /**
  * Provides access to to libraries for pricing of quote requests.
@@ -17,4 +19,6 @@ public interface QuoteCalculationEngine {
      * @return calculated quote price
      */
     double calculateQuotePrice(int securityId, double referencePrice, boolean buy, int quantity);
+
+    double askQuotePrice(int securityId, boolean buy, int quantity);
 }
